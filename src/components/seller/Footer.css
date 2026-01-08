@@ -1,0 +1,67 @@
+/* Seller Footer Component Styles */
+
+.seller-footer-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    padding: 0 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .seller-footer-container {
+        flex-direction: row;
+    }
+}
+
+.seller-footer-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.seller-footer-logo {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .seller-footer-logo {
+        display: block;
+    }
+}
+
+.seller-footer-divider {
+    display: none;
+    height: 1.75rem;
+    width: 1px;
+    background-color: rgba(107, 114, 128, 0.6);
+}
+
+@media (min-width: 768px) {
+    .seller-footer-divider {
+        display: block;
+    }
+}
+
+.seller-footer-copyright {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgb(107, 114, 128);
+}
+
+@media (min-width: 768px) {
+    .seller-footer-copyright {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}
+
+.seller-footer-social {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}

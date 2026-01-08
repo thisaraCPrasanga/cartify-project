@@ -1,0 +1,115 @@
+/* HeaderSlider Component Styles */
+
+.header-slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.header-slider-track {
+    display: flex;
+    transition: transform 700ms ease-in-out;
+}
+
+.header-slider-slide {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E6E9F2;
+    padding: 2rem 1.25rem;
+    margin-top: 1.5rem;
+    border-radius: 0.75rem;
+    min-width: 100%;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.header-slider-slide:hover {
+    background-color: #dde1ed;
+}
+
+@media (min-width: 768px) {
+    .header-slider-slide {
+        flex-direction: row;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+}
+
+.header-slider-content {
+    margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .header-slider-content {
+        padding-left: 2rem;
+        margin-top: 0;
+    }
+}
+
+.header-slider-offer {
+    padding-bottom: 0.25rem;
+    color: rgb(234, 88, 12);
+}
+
+@media (min-width: 768px) {
+    .header-slider-offer {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+.header-slider-title {
+    max-width: 32rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .header-slider-title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+.header-slider-image-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.header-slider-image {
+    width: 12rem;
+}
+
+@media (min-width: 768px) {
+    .header-slider-image {
+        width: 18rem;
+    }
+}
+
+.header-slider-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.header-slider-dot {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.header-slider-dot-active {
+    background-color: #16A34A;
+}
+
+.header-slider-dot-inactive {
+    background-color: rgba(107, 114, 128, 0.3);
+}

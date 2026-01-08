@@ -1,0 +1,111 @@
+/* SellerPage (AddProduct) Styles */
+
+.add-product-container {
+  flex: 1 1 0%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add-product-form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 32rem;
+}
+
+@media (min-width: 768px) {
+  .add-product-form {
+    padding: 2.5rem;
+  }
+}
+
+.add-product-label {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.add-product-image-upload-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.add-product-image-preview {
+  max-width: 6rem;
+  cursor: pointer;
+}
+
+.add-product-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-width: 28rem;
+}
+
+.add-product-input {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(107, 114, 128, 0.4);
+}
+
+@media (min-width: 768px) {
+  .add-product-input {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+}
+
+.add-product-textarea {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(107, 114, 128, 0.4);
+  resize: none;
+}
+
+@media (min-width: 768px) {
+  .add-product-textarea {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+}
+
+.add-product-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.add-product-small-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 8rem;
+}
+
+.add-product-btn {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  background-color: #16A34A;
+  color: white;
+  font-weight: 500;
+  border-radius: 0.25rem;
+}

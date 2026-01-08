@@ -1,0 +1,172 @@
+/* NewsLetter Component Styles */
+
+.newsletter-container {
+    background-color: #FFFFFF;
+    padding: 4rem 1rem;
+    font-family: sans-serif;
+}
+
+@media (min-width: 640px) {
+    .newsletter-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .newsletter-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.newsletter-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.newsletter-logo {
+    height: 2.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.newsletter-stars-container {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter-star {
+    color: rgb(250, 204, 21);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.newsletter-checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #16A34A;
+    border-radius: 9999px;
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-left: 0.5rem;
+}
+
+.newsletter-checkmark-icon {
+    width: 0.75rem;
+    height: 0.75rem;
+    color: white;
+}
+
+.newsletter-review-count {
+    color: rgb(107, 114, 128);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+.newsletter-reviews {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .newsletter-reviews {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.newsletter-review-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid rgb(243, 244, 246);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newsletter-review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-review-stars {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.newsletter-review-star {
+    color: rgb(250, 204, 21);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.newsletter-review-checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #16A34A;
+    border-radius: 9999px;
+    height: 1rem;
+    width: 1rem;
+    margin-left: 0.25rem;
+}
+
+.newsletter-review-checkmark-icon {
+    width: 0.625rem;
+    height: 0.625rem;
+    color: white;
+}
+
+.newsletter-google-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.newsletter-review-text {
+    color: #6B7280;
+    font-size: 0.9375rem;
+    line-height: 1.625;
+    margin-bottom: 2rem;
+}
+
+.newsletter-reviewer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.newsletter-reviewer-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #16A34A;
+    font-weight: 700;
+    border: 1px solid #16A34A;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.newsletter-reviewer-name {
+    font-weight: 700;
+    color: rgb(31, 41, 55);
+    letter-spacing: -0.025em;
+}

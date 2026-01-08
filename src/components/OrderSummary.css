@@ -1,0 +1,224 @@
+/* OrderSummary Component Styles */
+
+.order-summary-container {
+  width: 100%;
+  background-color: rgba(107, 114, 128, 0.05);
+  padding: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .order-summary-container {
+    width: 24rem;
+  }
+}
+
+.order-summary-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: rgb(55, 65, 81);
+}
+
+@media (min-width: 768px) {
+  .order-summary-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.order-summary-divider {
+  border-color: rgba(107, 114, 128, 0.3);
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.order-summary-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.order-summary-label {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgb(75, 85, 99);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.order-summary-dropdown-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border: 1px solid #e5e7eb;
+}
+
+.order-summary-dropdown-btn {
+  width: 100%;
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: white;
+  color: rgb(55, 65, 81);
+}
+
+.order-summary-dropdown-btn:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.order-summary-dropdown-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline;
+  float: right;
+  transition: transform 0.2s;
+}
+
+.order-summary-dropdown-icon-open {
+  transform: rotate(0deg);
+}
+
+.order-summary-dropdown-icon-closed {
+  transform: rotate(-90deg);
+}
+
+.order-summary-dropdown-menu {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-top: 0.25rem;
+  z-index: 10;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.order-summary-dropdown-item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.order-summary-dropdown-item:hover {
+  background-color: rgba(107, 114, 128, 0.1);
+}
+
+.order-summary-dropdown-add {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.order-summary-dropdown-add:hover {
+  background-color: rgba(107, 114, 128, 0.1);
+}
+
+.order-summary-promo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.order-summary-promo-input {
+  flex-grow: 1;
+  width: 100%;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding: 0.625rem;
+  color: rgb(75, 85, 99);
+  border: 1px solid #e5e7eb;
+}
+
+.order-summary-promo-btn {
+  background-color: #16A34A;
+  color: white;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.order-summary-promo-btn:hover {
+  background-color: #15803d;
+}
+
+.order-summary-totals {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-summary-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-summary-row-main {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.order-summary-row-label {
+  text-transform: uppercase;
+  color: rgb(75, 85, 99);
+}
+
+.order-summary-row-value {
+  color: rgb(31, 41, 55);
+}
+
+.order-summary-row-fee-label {
+  color: rgb(75, 85, 99);
+}
+
+.order-summary-row-fee-value {
+  font-weight: 500;
+  color: rgb(31, 41, 55);
+}
+
+.order-summary-total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .order-summary-total-row {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+.order-summary-place-btn {
+  width: 100%;
+  background-color: #16A34A;
+  color: white;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.order-summary-place-btn:hover {
+  background-color: #15803d;
+}

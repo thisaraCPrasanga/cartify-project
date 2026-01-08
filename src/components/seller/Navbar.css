@@ -1,0 +1,48 @@
+/* Seller Navbar Component Styles */
+
+.seller-navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+@media (min-width: 768px) {
+  .seller-navbar-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.seller-navbar-logo {
+  width: 7rem;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .seller-navbar-logo {
+    width: 8rem;
+  }
+}
+
+.seller-navbar-logout-btn {
+  background-color: red;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.seller-navbar-logout-btn:hover {
+  background-color: #ec282b;
+}
+
+@media (min-width: 640px) {
+  .seller-navbar-logout-btn {
+    padding: 0.5rem 1.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}

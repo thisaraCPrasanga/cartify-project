@@ -1,0 +1,123 @@
+/* FeaturedProduct Component Styles */
+
+.featured-product-container {
+    margin-top: 3.5rem;
+}
+
+.featured-product-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-product-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+}
+
+.featured-product-divider {
+    width: 7rem;
+    height: 0.125rem;
+    background-color: #16A34A;
+    margin-top: 0.5rem;
+}
+
+.featured-product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+    .featured-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .featured-product-grid {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .featured-product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 3.5rem;
+    }
+}
+
+.featured-product-card {
+    position: relative;
+}
+
+.featured-product-image {
+    transition: filter 0.3s ease-in-out;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.featured-product-card:hover .featured-product-image {
+    filter: brightness(0.75);
+}
+
+.featured-product-overlay {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.featured-product-card:hover .featured-product-overlay {
+    transform: translateY(-1rem);
+}
+
+.featured-product-overlay>* {
+    margin-bottom: 0.5rem;
+}
+
+.featured-product-overlay-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+@media (min-width: 1024px) {
+    .featured-product-overlay-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+.featured-product-overlay-description {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    max-width: 15rem;
+}
+
+@media (min-width: 1024px) {
+    .featured-product-overlay-description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+.featured-product-button {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    background-color: #16A34A;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.featured-product-button-icon {
+    height: 0.75rem;
+    width: 0.75rem;
+}

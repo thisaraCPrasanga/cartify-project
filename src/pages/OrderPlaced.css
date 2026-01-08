@@ -1,0 +1,49 @@
+/* OrderPlaced Page Styles */
+
+.order-placed-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.order-placed-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.order-placed-checkmark {
+  position: absolute;
+  padding: 1.25rem;
+}
+
+.order-placed-spinner {
+  animation: spin 1s linear infinite;
+  border-radius: 9999px;
+  height: 6rem;
+  width: 6rem;
+  border-width: 4px;
+  border-color: #e5e7eb;
+  border-top-color: #86efac;
+}
+
+.order-placed-text {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

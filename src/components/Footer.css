@@ -1,0 +1,124 @@
+/* Footer Component Styles */
+
+.footer {
+    /* No specific styles needed for footer tag */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3.5rem 1.5rem;
+    gap: 2.5rem;
+    border-bottom: 1px solid rgba(107, 114, 128, 0.3);
+    color: rgb(107, 114, 128);
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-container {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+.footer-about {
+    width: 80%;
+}
+
+.footer-logo {
+    width: 7rem;
+}
+
+@media (min-width: 768px) {
+    .footer-logo {
+        width: 8rem;
+    }
+}
+
+.footer-description {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.footer-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+    .footer-section {
+        justify-content: center;
+    }
+}
+
+.footer-section-contact {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+    .footer-section-contact {
+        justify-content: center;
+    }
+}
+
+.footer-heading {
+    font-weight: 500;
+    color: rgb(17, 24, 39);
+    margin-bottom: 1.25rem;
+}
+
+.footer-list {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.footer-list li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-list a {
+    transition: all 0.15s ease-in-out;
+}
+
+.footer-list a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact-info {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.footer-contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-copyright {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+@media (min-width: 768px) {
+    .footer-copyright {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}
